@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    >
+
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="?android:listPreferredItemHeight"
+        android:src="@drawable/doge"
+        android:id="@+id/image_contact"
+        android:contentDescription="@string/contact_image_description"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/name_contact"
+        android:text="@string/contact_name_text"
+        android:textSize="16sp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/image_contact"
+        android:layout_toEndOf="@id/image_contact"
+        />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:src="@drawable/redx"
+        android:id="@+id/remove_button"
+        android:layout_height="?android:listPreferredItemHeight"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="@string/remove_button_description"
+        />
+</RelativeLayout>
